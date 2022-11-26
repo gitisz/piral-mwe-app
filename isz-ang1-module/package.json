@@ -1,0 +1,63 @@
+{
+  "name": "isz-ang1-module",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@angular/cli": "^14",
+    "@angular/compiler-cli": "^14",
+    "@ngtools/webpack": "^14",
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "copy-webpack-plugin": "^10",
+    "html-loader": "^3",
+    "isz-app": "file:../isz-app/dist/emulator/isz-app-1.0.1.tgz",
+    "piral-cli": "0.15.1",
+    "piral-cli-webpack5": "0.15.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "to-string-loader": "^1",
+    "tslib": "2.4.1",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "importmap": {
+    "imports": {
+      "@angular/common": "@angular/common",
+      "@angular/compiler": "@angular/compiler",
+      "@angular/core": "@angular/core",
+      "@angular/platform-browser": "@angular/platform-browser",
+      "@angular/platform-browser-dynamic": "@angular/platform-browser-dynamic",
+      "@angular/router": "@angular/router"
+    },
+    "inherit": [
+      "isz-app"
+    ]
+  },
+  "dependencies": {
+    "@angular/common": "^14",
+    "@angular/compiler": "^14",
+    "@angular/core": "^14",
+    "@angular/platform-browser": "^14",
+    "@angular/platform-browser-dynamic": "^14",
+    "@angular/router": "^14",
+    "core-js": "^3.19.0",
+    "piral-ng": "0.15.0",
+    "rxjs": "~7.4",
+    "zone.js": "~0.11"
+  },
+  "source": "src/index.tsx"
+}
